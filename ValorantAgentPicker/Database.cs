@@ -61,5 +61,15 @@ namespace ValorantAgentPicker
 
             return true;
         }
+
+        public bool DeleteProfile(int profileID)
+        {
+            var profile = GetProfileByID(profileID);
+
+            _context.Profiles.Remove(profile);
+            _context.SaveChanges();
+
+            return true;
+        }
     }
 }

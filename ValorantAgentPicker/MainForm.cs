@@ -165,7 +165,7 @@ namespace ValorantAgentPicker
             lastX = Convert.ToInt32(AgentLastX.Text);
             lastY = Convert.ToInt32(AgentLastY.Text);
 
-            if (time < selectedTime * 1000)
+            if (time < selectedTime * 10)
             {
                 Cursor.Position = new Point(firstX, firstY);
                 Thread.Sleep(25);
